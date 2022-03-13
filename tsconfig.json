@@ -4,9 +4,7 @@
     "outDir": "dist",
     "target": "ES5",
     "strict": true,
-    "moduleResolution": "node",
-    "module": "commonjs",
-    "esModuleInterop": true
+    "module": "ES2015"
   },
   "include": ["src/**/*"]
 }
