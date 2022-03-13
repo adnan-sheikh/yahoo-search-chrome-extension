@@ -1,15 +1,11 @@
 {
   "name": "Yahoo Omnibox Search",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "version": "1.0.0",
+  "omnibox": { "keyword": "yahoo" },
   "description": "This extension will enable searching yahoo search engine using google omnibox",
   "background": {
-    "service_worker": "background.js"
-  },
-  "content_scripts": [
-    {
-      "js": ["contentScript.js"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+    "scripts": ["background.js"],
+    "persistent": false
+  }
 }
