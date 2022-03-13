@@ -4,11 +4,12 @@
   "description": "chrome extension for performing yahoo search in omnibox",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "check:types": "tsc"
   },
   "author": "adnan",
   "license": "ISC",
   "devDependencies": {
-    "@types/chrome": "^0.0.179"
+    "@types/chrome": "^0.0.179",
+    "typescript": "^4.6.2"
   }
 }
