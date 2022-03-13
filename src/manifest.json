@@ -7,5 +7,6 @@
   "background": {
     "scripts": ["background.js"],
     "persistent": false
-  }
+  },
+  "host_permissions": ["https://search.yahoo.com/"]
 }

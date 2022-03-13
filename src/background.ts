@@ -1,11 +1,18 @@
+import SerpApi from "google-search-results-nodejs";
+
+const search = new SerpApi.GoogleSearch("secret_api_key");
 chrome.runtime.onInstalled.addListener(() => {
   console.log("Extension is installed successfully!");
 });
 
-chrome.omnibox.onInputChanged.addListener((text, suggest) => {
-  console.log(text);
-  suggest([
-    { content: "hi", description: "this is the first suggestion" },
-    { content: "hi again", description: "this is the second suggestion" },
-  ]);
+chrome.omnibox.onInputEntered.addListener((text, suggest) => {
+  const newUrl = `https://search.yahoo.com/search?p=${encodeURIComponent(
+    text
+  )}`;
+  fetch(newUrl).then((res) => {
+    console.log(res.body);
+  });
+  // .then((jsonRes) => {
+  //   console.log(jsonRes);
+  // });
 });

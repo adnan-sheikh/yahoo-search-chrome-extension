@@ -11,5 +11,8 @@
   "devDependencies": {
     "@types/chrome": "^0.0.179",
     "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "google-search-results-nodejs": "^2.1.0"
   }
 }

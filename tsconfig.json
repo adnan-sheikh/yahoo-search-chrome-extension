@@ -2,8 +2,11 @@
   "compilerOptions": {
     "allowJs": true,
     "outDir": "dist",
-    "target": "ES6",
-    "strict": true
+    "target": "ES5",
+    "strict": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "esModuleInterop": true
   },
   "include": ["src/**/*"]
 }
