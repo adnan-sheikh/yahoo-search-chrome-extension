@@ -8,5 +8,10 @@
     "scripts": ["background.js"],
     "persistent": false
   },
+  "icons": {
+    "16": "yahoo16.png",
+    "48": "yahoo48.png",
+    "128": "yahoo128.png"
+  },
   "permissions": ["https://search.yahoo.com/"]
 }
