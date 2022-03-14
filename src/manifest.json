@@ -5,7 +5,7 @@
   "omnibox": { "keyword": "yahoo" },
   "description": "This extension will enable searching yahoo search engine using google omnibox",
   "background": {
-    "page": "src/html/background.html",
+    "scripts": ["background.js"],
     "persistent": false
   },
   "permissions": ["https://search.yahoo.com/"]
